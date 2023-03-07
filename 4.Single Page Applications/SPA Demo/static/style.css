@@ -1,0 +1,153 @@
+label {
+    display: block;
+}
+
+#catalog-view {
+    background-color: rgba(255, 102, 0, 0.267);
+}
+
+#details-view {
+    background-color: rgb(116, 236, 132);
+}
+
+#login-view {
+    background-color: rgb(104, 106, 238);
+}
+
+
+#register-view {
+    background-color: rgb(216, 145, 52);
+}
+
+.user,
+.guest {
+    display: none;
+}
+
+body {
+
+    text-decoration: solid;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav a {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: black;
+}
+
+
+
+
+li a:link,
+li a:visited {
+
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+form#register-form button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: darkgoldenrod;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px #999;
+}
+
+form#login-form button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px #999;
+}
+
+form#login-form button:hover{
+    background-color: #3399ff;
+}
+form#login-form button:active{
+    background-color: #3399ff;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+
+}
+
+
+
+
+form#register-form button:hover{
+    background-color: burlywood
+}
+
+form#register-form button:active {
+    background-color: burlywood;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+li a:hover,
+li a:active {
+
+    background-color: darkgoldenrod;
+    text-decoration-color: snow;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav a:hover {
+    background-color: #111;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: #111;
+}
+
+ul {
+    background: #3399ff;
+    padding: 20px;
+}
+
+
+ul li {
+    background: #cce5ff;
+    color: darkblue;
+    margin: 5px;
+    list-style-type: none;
+    padding: 5px 5%;
+}

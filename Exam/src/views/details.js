@@ -34,6 +34,7 @@ const detailsTemplate = (album, isOwner, isUser,totalLikes ,userLikes,onDelete, 
   </section>`
 }
 export async function showDetailsView(ctx){
+  
     const albumId = ctx.params.id;
     const album = await getAlbumById(albumId);
     const user = getUserData();
@@ -46,7 +47,7 @@ export async function showDetailsView(ctx){
     const isOwner = user && user._id == album._ownerId;
     const isUser = !isOwner && user;
 
-    ctx.render(detailsTemplate(album, isOwner, isUser,totalLikes, userLikes,onDelete, onLike))
+    ctx.render(detailsTemplate(album, isOwner, isUser,totalLikes, userLikes, onDelete, onLike))
 
     async function onDelete(){
         const confirmed = confirm('Are you sure you want to delete this album?');
